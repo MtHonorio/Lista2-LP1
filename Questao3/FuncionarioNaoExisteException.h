@@ -6,12 +6,11 @@ class FuncionarioNaoExisteException : public std::exception
 {
     public:
         FuncionarioNaoExisteException();
-        ~FuncionarioNaoExisteException();
 		
 		std::string getErroF();
 		
 	private:
-		std::string erroFNEE = "Funcionario nao existe";
+		std::string erroFNEE = "\nFuncionario nao existe\n";
 
 
 };

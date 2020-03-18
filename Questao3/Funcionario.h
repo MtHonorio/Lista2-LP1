@@ -24,6 +24,6 @@ class Funcionario
         virtual void print(){
 			std::cout << "Nome: " << this->getNome() << "\n"
 		 << "Matricula: " << this->getMatricula() << "\n"
-		 << "Salario: " << this->calcularSalario() << std::endl;
+		 << "Salario: " << this->calcularSalario() << "\n" << std::endl;
 		 };
 };

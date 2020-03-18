@@ -11,7 +11,6 @@ class Comissionado : public Funcionario
         Comissionado();
 		Comissionado(double x, double vs, double pc, Funcionario funcionario);
 		
-		double calcularSalario();
         void setSalarioBase(double);
         void setVendasSemanais(double);
         void setPercentualVendas(double);
@@ -20,6 +19,15 @@ class Comissionado : public Funcionario
         double getVendasSemanais();
         double getPercentualVendas();
 		
-		void print();
+        double calcularSalario(){
+            return salarioBase + (vendasSemanais*percentualComissao);
+        };
 		
+        void print(){    
+            std::cout << "Nome: " << this->getNome() << std::endl
+                    << "Matricula: " << this->getMatricula() << std::endl
+                    << "Salario: " << this->calcularSalario() << std::endl
+                    << "Vendas Semanais: " << this->getVendasSemanais() << std::endl
+                    << "Percentual: " << this->getPercentualVendas() << "\n" << std::endl;
+        }		
 };

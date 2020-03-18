@@ -41,9 +41,11 @@ void Funcionario::setMatricula(int x){
     matricula = x;
 }
 
-void Funcionario::print(){
+/*void Funcionario::print(){
 	cout << "Nome: " << this->getNome() << endl
 		 << "Matricula: " << this->getMatricula() << endl
 		 << "Salario: " << this->calcularSalario() << endl;
-}
+}*/
+
+double Funcionario::calcularSalario(){}
 

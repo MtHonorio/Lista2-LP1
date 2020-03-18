@@ -25,18 +25,6 @@ void Comissionado::setSalarioBase(double s){
     }
 }
 
-double Comissionado::calcularSalario(){
-    return salarioBase + (vendasSemanais*percentualComissao);
-}
-
-void Comissionado::print(){
-	std::cout << "Nome: " << this->getNome() << std::endl
-		 << "Matricula: " << this->getMatricula() << std::endl
-		 << "Salario: " << this->calcularSalario() << std::endl
-		 << "Vendas Semanais: " << this->getVendasSemanais() << std::endl
-		 << "Percentual: " << this->getPercentualVendas() << std::endl;
-}
-
 Comissionado::Comissionado(){
 	nome = "Nulo";
 	matricula = 0;

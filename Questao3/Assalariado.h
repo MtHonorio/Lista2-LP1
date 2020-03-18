@@ -10,12 +10,21 @@ class Assalariado : public Funcionario
         Assalariado();
 		Assalariado(double s, Funcionario funcionario);
 		
-		double calcularSalario();
+		
         void setSalario(double x);
 
         double getSalario();
 
-        void print();
+        //Metodos Abstratos
+        double calcularSalario(){
+            return salario; 
+};
+        
+        void print(){
+            	std::cout << "Nome: " << this->getNome() << std::endl
+                          << "Matricula: " << this->getMatricula() << std::endl
+                          << "Salario: " << this->calcularSalario() << "\n" << std::endl;
+        };
 
 
 };

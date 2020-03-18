@@ -15,7 +15,6 @@ class SistemaGerenciaFolha : public Funcionario
         Funcionario *funcionario[4];
         
         SistemaGerenciaFolha();
-        ~SistemaGerenciaFolha();
 
         void setFuncionarios(Funcionario x);
         double calculaValorTotalFolha();

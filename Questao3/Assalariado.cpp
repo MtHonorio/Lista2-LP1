@@ -9,16 +9,6 @@ void Assalariado::setSalario(double x){
     }
 }
 
-double Assalariado::calcularSalario(){
-    return salario; 
-}
-
-void Assalariado::print(){
-	std::cout << "Nome: " << this->getNome() << std::endl
-		 << "Matricula: " << this->getMatricula() << std::endl
-		 << "Salario: " << this->calcularSalario() << std::endl;
-}
-
 Assalariado::Assalariado(){
 	nome = "Nulo";
 	matricula = 0;
@@ -26,7 +16,8 @@ Assalariado::Assalariado(){
 }
 
 Assalariado::Assalariado(double s, Funcionario funcionario){
-	setSalario(s);
+	setFuncionario(funcionario);
+    setSalario(s);
 }
 
 double Assalariado::getSalario(){

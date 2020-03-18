@@ -14,17 +14,6 @@ void Horista::setSalarioPorHora(double x){
     
 };
 
-double Horista::calcularSalario(){
-    double x, salario;
-    if (horasTrabalhadas > 40.0){
-        x = horasTrabalhadas - 40.0;
-        salario = (x*(salarioPorHora * 1.5)) + (salarioPorHora*40);
-    }else{
-        salario = horasTrabalhadas*salarioPorHora;
-    }
-    return salario;
-};
-
 Horista::Horista(){
 	nome = "NULL";
 	matricula = 0;
